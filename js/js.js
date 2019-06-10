@@ -46,9 +46,9 @@ function viewOriginal(event) {
 }
 
 function closeModal(event) {
-  if (event.target !== event.currentTarget) {
-    return;
-  }
+  // if (event.target !== event.currentTarget) {
+  //   return;
+  // }
   overlay.classList.remove('is-visible');
 }
 
@@ -56,5 +56,6 @@ function closeModalByPress(event) {
   if (event.code !== 'Escape') {
     return;
   }
-  overlay.classList.remove('is-visible');
+  // overlay.classList.remove('is-visible');
+  closeModal();
 }
